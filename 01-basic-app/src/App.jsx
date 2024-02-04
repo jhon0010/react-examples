@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import './App.css'
+import Card from './components/Card'
+import { OtherCard } from './components/OtherCard'
 
 function App() {
 
@@ -43,12 +45,15 @@ function App() {
 
   return (
     <>
-      <h1>Fiest react app</h1>
+      <h1 className='text-3xl'>First react app</h1>
       <h2>Count value: {count} </h2>
       <button onClick={addValue}>Increment</button>
       <button onClick={decrement}>Decrement</button>
       <button onClick={addOneMultipleTimesWithPrevState}>Add multiple times</button>
       <p>footer: {count}</p>
+      <OtherCard name= 'Jhon' role='CEO'/>
+      <OtherCard/>
+      <OtherCard/>
     </>
   )
 }
